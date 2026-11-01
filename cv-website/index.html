@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CV online Niken Nur Faizah, mahasiswa Informatika (Sains Data) Universitas Muhammadiyah Malang.">
+  <title>Niken Nur Faizah | CV Online</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Navigasi utama">
+      <a href="#top" class="brand">NNF<span>.</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#profil">Profil</a></li>
+        <li><a href="#pendidikan">Pendidikan</a></li>
+        <li><a href="#organisasi">Organisasi</a></li>
+        <li><a href="#keterampilan">Keterampilan</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+        <li><button class="theme-btn" id="themeBtn" aria-label="Ganti tema">◐</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero container">
+      <div class="hero-text reveal">
+        <p class="eyebrow">Curriculum Vitae</p>
+        <h1>Niken Nur Faizah</h1>
+        <p class="role">Mahasiswa Informatika <em>(Sains Data)</em><br>
+          <span id="typing" aria-live="polite"></span><span class="caret">|</span>
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#kontak">Hubungi Saya</a>
+          <a class="btn btn-ghost" href="#profil">Lihat Profil</a>
+        </div>
+      </div>
+      <div class="hero-photo reveal">
+        <div class="photo-ring">
+          <img src="img/foto.jpg" alt="Foto Niken Nur Faizah" id="photo"
+               onerror="this.style.display='none';document.getElementById('initials').style.display='grid'">
+          <div class="initials" id="initials">NNF</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROFIL -->
+    <section id="profil" class="section container">
+      <h2 class="section-title reveal">Profil</h2>
+      <div class="card reveal">
+        <p>Mahasiswa Informatika (Sains Data) Universitas Muhammadiyah Malang dengan keahlian dalam EDA, data pipeline, dan Machine Learning menggunakan Python dan SQL. Terbiasa mengolah data kompleks menjadi insight bisnis serta berkolaborasi dalam tim lintas fungsi.</p>
+        <div class="stats">
+          <div><strong data-count="3.90" data-decimals="2">0</strong><span>IPK / 4.00</span></div>
+          <div><strong data-count="2024">0</strong><span>Angkatan</span></div>
+          <div><strong data-count="2027">0</strong><span>Target Lulus</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PENDIDIKAN -->
+    <section id="pendidikan" class="section container">
+      <h2 class="section-title reveal">Pendidikan</h2>
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <span class="dot"></span>
+          <p class="date">2024 – 2027</p>
+          <h3>Informatika</h3>
+          <p class="place">Universitas Muhammadiyah Malang</p>
+          <ul>
+            <li>IPK: 3.90 / 4.00</li>
+            <li>Mata kuliah relevan:</li>
+          </ul>
+          <div class="chips">
+            <span>Machine Learning</span><span>Statistik Inferensial</span><span>Pemrograman SQL</span>
+            <span>Data Mining</span><span>Visualisasi Data</span><span>Algoritma &amp; Struktur Data</span>
+          </div>
+        </article>
+        <article class="timeline-item reveal">
+          <span class="dot"></span>
+          <p class="date">2021 – 2023</p>
+          <h3>MIPA</h3>
+          <p class="place">SMA Laboratorium UM, Malang</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ORGANISASI -->
+    <section id="organisasi" class="section container">
+      <h2 class="section-title reveal">Pengalaman Organisasi</h2>
+      <article class="card reveal">
+        <div class="card-head">
+          <h3>Data Science Club – HUMAS</h3>
+          <span class="badge">2026</span>
+        </div>
+        <ul class="list">
+          <li><strong>Cross-functional Collaboration:</strong> Bekerja sama dengan divisi lain untuk menentukan target audience dan indikator keberhasilan acara.</li>
+          <li><strong>Project Management:</strong> Memimpin proyek analisis data internal dari tahap penentuan masalah, pengumpulan data, sampai presentasi akhir.</li>
+          <li><strong>Data Wrangling:</strong> Memproses data mentah dari survei atau pendaftaran acara menggunakan Python atau SQL sampai siap dianalisis.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- KETERAMPILAN -->
+    <section id="keterampilan" class="section container">
+      <h2 class="section-title reveal">Keterampilan</h2>
+      <div class="grid-2">
+        <article class="card reveal">
+          <h3>Teknis</h3>
+          <h4>Programming &amp; Databases</h4>
+          <div class="chips"><span>Python</span><span>SQL</span><span>PostgreSQL</span><span>MySQL</span><span>BigQuery</span></div>
+          <h4>Konsep &amp; Metodologi</h4>
+          <div class="chips"><span>Exploratory Data Analysis</span><span>Machine Learning</span><span>Feature Engineering</span></div>
+          <h4>Tools &amp; Version Control</h4>
+          <div class="chips"><span>Git/GitHub</span><span>Google Colab</span><span>Jupyter Notebook</span><span>VS Code</span></div>
+        </article>
+        <article class="card reveal">
+          <h3>Non-Teknis</h3>
+          <ul class="list">
+            <li>Terbiasa bekerja sama dengan berbagai divisi (seperti tim product, marketing, atau manajemen) untuk menyelesaikan proyek.</li>
+            <li>Cepat mempelajari tools, metodologi, atau teknologi baru di bidang data yang terus berkembang.</li>
+            <li>Mampu mengidentifikasi akar masalah bisnis dan merumuskan solusinya melalui pendekatan berbasis data.</li>
+          </ul>
+        </article>
+      </div>
+      <div class="grid-2 mt">
+        <article class="card reveal">
+          <h3>Bahasa</h3>
+          <ul class="list plain">
+            <li>Indonesia: Fasih</li>
+            <li>Inggris: Fasih</li>
+          </ul>
+        </article>
+        <article class="card reveal">
+          <h3>Sertifikat</h3>
+          <ul class="list plain">
+            <li>Business English Specialization – Udemy</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section id="kontak" class="section container">
+      <h2 class="section-title reveal">Kontak</h2>
+      <div class="grid-2">
+        <div class="card reveal contact-info">
+          <p>Tertarik berdiskusi atau berkolaborasi? Hubungi saya lewat:</p>
+          <ul class="list plain">
+            <li>📍 JL. Angkawijaya, Malang</li>
+            <li>📞 <a href="tel:+6285852167180">+62 858-5216-7180</a></li>
+            <li>✉️ <a href="mailto:nikennurfaizah792@gmail.com" id="emailLink">nikennurfaizah792@gmail.com</a></li>
+          </ul>
+          <button class="btn btn-ghost" id="copyEmail" type="button">Salin Email</button>
+        </div>
+        <form class="card reveal" id="contactForm" novalidate>
+          <label for="name">Nama</label>
+          <input type="text" id="name" name="name" placeholder="Nama lengkap" required>
+          <small class="error" data-for="name"></small>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+          <small class="error" data-for="email"></small>
+
+          <label for="message">Pesan</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tulis pesan Anda..." required></textarea>
+          <small class="error" data-for="message"></small>
+
+          <button class="btn btn-primary" type="submit">Kirim Pesan</button>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Niken Nur Faizah. Dibuat dengan HTML, CSS &amp; JavaScript.</p>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Kembali ke atas">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html>
